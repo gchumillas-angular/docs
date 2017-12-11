@@ -24,6 +24,14 @@ ng serve --open
 # and places it under the /src/app/<name> folder (the --spec flag is optional)
 ng generate component <name> --spec=false
 
-# generate the .ts file that defines a service
+# generates the .ts file that defines a service
 # and places it under the /src/app folder (the --spec flag is optional)
+ng generate service <name> --spec=false
+
+# generates a 'module'.
+# a module contains important information about how the rest of the application
+# fits together (the --spec flag is optional)
+#   --flat puts the file in src/app instead of its own folder.
+#   --module=app tells the CLI to register it in the imports array of the AppModule.
+ng generate module <name> --flat --module=app --spec=false
 ```
