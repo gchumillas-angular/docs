@@ -17,6 +17,13 @@ npm install @angular-devkit/schematics@0.0.40
 ng serve --open
 ```
 
+# Install third-party libraries
+
+```bash
+# Install a third-party library and updates package.json
+ng install <package-name>
+```
+
 # Angular-CLI utility
 
 ```bash
