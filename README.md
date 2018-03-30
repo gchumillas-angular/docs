@@ -5,7 +5,7 @@ Starting on Angular's framework.
 
 ```bash
 # creates a new project with SASS support
-ng new profile --style=scss
+ng new my-app --style=scss
 cd my-app
 
 # the following lines removes an unnecessary warning message
