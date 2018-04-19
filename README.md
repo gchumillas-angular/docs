@@ -43,3 +43,19 @@ ng generate service <name> --spec=false
 #   --module=app tells the CLI to register it in the imports array of the AppModule.
 ng generate module <name> --flat --module=app --spec=false
 ```
+
+# Internationalization (i18n)
+
+More info:  
+https://angular.io/guide/i18n
+
+```bash
+# create the messages.xlf file inside src/locale
+ng xi18n --outputPath=src/locale
+
+# use the messages.es.xlf translations file
+ng serve --aot --i18nFile=src/locale/messages.es.xlf --i18nFormat=xlf --locale=es
+
+# build the project for a given translation
+ng build --prod --aot --i18nFile=src/locale/messages.es.xlf --i18nFormat=xlf --locale=es
+```
